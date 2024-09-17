@@ -5,8 +5,14 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Atsumeru-xyz/Atsumeru/releases/download/1.0.3/Atsumeru-1.0.3.jar#/Atsumeru.jar",
-            "hash": "sha256:fe03ff700cd24968baacc36d0b49a733121b4f5cdb1b9cfffa6789c76e1df424"
+            "url": [
+                "https://github.com/Atsumeru-xyz/Atsumeru/releases/download/1.0.3/Atsumeru-1.0.3.jar#/Atsumeru.jar",
+                "https://github.com/Atsumeru-xyz/AtsumeruManager/releases/download/V1.0.0/AtsumeruManager_v1.0.0.exe#/AtsumeruManager.exe"
+            ],
+            "hash": [
+                "sha256:fe03ff700cd24968baacc36d0b49a733121b4f5cdb1b9cfffa6789c76e1df424",
+                "sha256:4f8c9988d3cbeb9526ffa39679e53a2d8a2bb2f439632d93f8a4208eddff253a"
+            ]
         }
     },
     "bin": [
@@ -16,6 +22,15 @@
             "-Dserver.port=13337", 
             "-jar", 
             "$dir\\Atsumeru.jar"
+        ],
+        [
+            "AtsumeruManager.exe"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "AtsumeruManager.exe",
+            "AtsumeruManager"
         ]
     ],
     "checkver": {

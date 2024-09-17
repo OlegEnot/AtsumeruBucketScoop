@@ -18,16 +18,29 @@
     "bin": [
         [
             "java.exe",
-            "atsumeru",
+            "AtsumeruServer",
             "-Dserver.port=13337", 
             "-jar", 
             "$dir\\Atsumeru.jar"
         ],
         [
-            "AtsumeruManager.exe"
+            "AtsumeruManager.exe",
+            "AtsumeruManager"
         ]
     ],
     "shortcuts": [
+        [
+            [
+                "java.exe",
+                "AtsumeruServer",
+                "-Dserver.port=13337", 
+                "-jar", 
+                "$dir\\Atsumeru.jar"
+            ],
+            [
+                "AtsumeruServer"
+            ]
+        ],
         [
             "AtsumeruManager.exe",
             "AtsumeruManager"
@@ -37,6 +50,6 @@
 		"github": "https://github.com/Atsumeru-xyz/Atsumeru"
     },
     "suggest": {
-        "Java": "java/temurin11-jre"
+        "JRE": "java/temurin11-jre"
     }
 }

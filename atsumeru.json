@@ -49,7 +49,7 @@
     "checkver": {
 		"github": "https://github.com/Atsumeru-xyz/Atsumeru"
     },
-    "suggest": {
+    "depends_on": {
         "JRE": "java/temurin11-jre"
     }
 }

@@ -14,6 +14,15 @@ Follow the steps below:
 4. Launch AtsumeruServer and AtsumeruManager from the Start Menu.
 5. Verify that you have Atsumeru running by opening [http://localhost:13337](http://localhost:13337) in [AtsumeruManager](https://github.com/Atsumeru-xyz/AtsumeruManager/) app, using the login data from the string `Admin user created with password = <random_generated_admin_password>`, **(NOT BROWSER!)**.
 
+## Install using [UniGetUI](https://www.marticliment.com/unigetui)
+
+To install the Atsumeru Server, follow the steps below:
+
+1. Open Settings.
+2. Add [source](https://github.com/OlegEnot/AtsumeruBucketScoop.git) as in the screenshot below:
+<img src="https://i.imgur.com/s9txynp.png" alt="MarineGEO circle logo" style="height: 350px; width:450px;"/>
+
+3. Find Atsumeru via search and click install. Incredibly easy :blush:
 
 ## Install as manually
 

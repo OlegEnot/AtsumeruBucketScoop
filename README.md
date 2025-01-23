@@ -17,7 +17,7 @@ Follow the steps below:
 
 ## Install as manually
 
-To install the exporter as a Windows service, follow the steps below:
+To install the Atsumeru Server, follow the steps below:
 
 1. Open a powershell prompt (as a regular user):
 2. Run the following commands:

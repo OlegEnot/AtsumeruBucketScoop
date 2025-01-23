@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": [
-                "https://github.com/Atsumeru-xyz/Atsumeru/releases/download/1.0.3/Atsumeru-1.1.jar#/Atsumeru.jar",
+                "https://github.com/Atsumeru-xyz/Atsumeru/releases/download/1.1/Atsumeru-1.1.jar#/Atsumeru.jar",
                 "https://github.com/Atsumeru-xyz/AtsumeruManager/releases/download/V1.0.0/AtsumeruManager_v1.0.0.exe#/AtsumeruManager.exe",
                 "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jre_x64_windows_hotspot_17.0.14_7.zip"
             ],

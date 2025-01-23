@@ -1,26 +1,26 @@
 {
-    "version": "1.0.3", 
+    "version": "1.1", 
     "description": "Free open-source self-hosted mangas/comics/light novels media server.",
     "homepage": "https://github.com/Atsumeru-xyz",
     "license": "MIT",
     "architecture": {
         "64bit": {
             "url": [
-                "https://github.com/Atsumeru-xyz/Atsumeru/releases/download/1.0.3/Atsumeru-1.0.3.jar#/Atsumeru.jar",
+                "https://github.com/Atsumeru-xyz/Atsumeru/releases/download/1.0.3/Atsumeru-1.1.jar#/Atsumeru.jar",
                 "https://github.com/Atsumeru-xyz/AtsumeruManager/releases/download/V1.0.0/AtsumeruManager_v1.0.0.exe#/AtsumeruManager.exe",
-                "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_x64_windows_hotspot_11.0.24_8.zip"
+                "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jre_x64_windows_hotspot_17.0.14_7.zip"
             ],
             "hash": [
-                "sha256:fe03ff700cd24968baacc36d0b49a733121b4f5cdb1b9cfffa6789c76e1df424",
+                "sha256:943AC2D0B59CA009A50E725F9CABDCF3E2CA813D5BAD80CEB45CB94D1800C72D",
                 "sha256:4f8c9988d3cbeb9526ffa39679e53a2d8a2bb2f439632d93f8a4208eddff253a",
-                "sha256:78e10f7d025898b7dc7436b2bb986570283cca3cb4a654991a4f9671231da536"
+                "sha256:D42F84605C8E27C38998B44AC493D1067ABBE45BE89969C935D71A858393405C"
             ]
         }
     },
     "extract_to": "jre",
     "bin": [
         [
-            "jre\\jdk-11.0.24+8-jre\\bin\\java.exe",
+            "jre\\jdk-17.0.14+7-jre\\bin\\java.exe",
             "AtsumeruServer",
             "-Dserver.port=13337", 
             "-jar", 
@@ -32,13 +32,13 @@
         ]
     ],
     "env_set": {
-        "ATSU_JRE": "$original_dir\\jre\\jdk-11.0.24+8-jre\\bin"
+        "ATSU_JRE": "$original_dir\\jre\\jdk-17.0.14+7-jre\\bin"
     },
     "pre_install": [
         "Out-File -FilePath \"$original_dir\\start_AtsumeruServer.ps1\" -InputObject '$ErrorActionPreference = \"Stop\"'",
         "$content = '$javaArgs = @(\"-Dserver.port=13337\",\"-jar\",\"' + $original_dir + '\\Atsumeru.jar\")'",
         "Out-File -FilePath \"$original_dir\\start_AtsumeruServer.ps1\" -InputObject $content -Append",
-        "$content2 = '& \"' + $original_dir + '\\jre\\jdk-11.0.24+8-jre\\bin\\java.exe\" @javaArgs'",
+        "$content2 = '& \"' + $original_dir + '\\jre\\jdk-17.0.14+7-jre\\bin\\java.exe\" @javaArgs'",
         "Out-File -FilePath \"$original_dir\\start_AtsumeruServer.ps1\" -InputObject $content2 -Append",
         "Out-File -FilePath \"$original_dir\\app.properties\" -InputObject \"`n\" -Append"
     ],
